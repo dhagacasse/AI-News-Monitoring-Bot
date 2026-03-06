@@ -7,9 +7,9 @@ from telegram import Bot
 import openai
 
 # Telegram & OpenAI configs
-TELEGRAM_TOKEN = "8783809477:AAG2NaaX5bhO4qj9SU5wHNcS9zgkRYfMgpg"
-TELEGRAM_CHAT_ID = "5333799785"
-OPENAI_API_KEY = "YOUR_OPENAI_API_KEY"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 bot = Bot(token=TELEGRAM_TOKEN)
 translator = Translator()
