@@ -1,0 +1,6 @@
+feedparser
+requests
+schedule
+python-telegram-bot==20.3
+openai
+googletrans==4.0.0-rc1
